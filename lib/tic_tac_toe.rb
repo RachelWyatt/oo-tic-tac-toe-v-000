@@ -32,14 +32,24 @@ class TicTacToe
 
   def position_taken?(index)
     if @board[index] == "X" || @board[index] == "O"
+<<<<<<< HEAD
       return true
     elsif @board[index] == " "
       return false
+=======
+      puts "true"
+    elsif @board[index] == " "
+      puts "true"
+>>>>>>> b890aa97816b391b0a21c24a26ccd31fbd3284e3
     end
   end
 
   def valid_move?(index)
+<<<<<<< HEAD
   index.between?(0,8) && !position_taken?(index)
+=======
+  index.between?(0,8) && !position_taken?(@board,index)
+>>>>>>> b890aa97816b391b0a21c24a26ccd31fbd3284e3
   end
 
   #def turn
@@ -58,7 +68,11 @@ class TicTacToe
     @board.count{|token| token == "X" || token == "O"}
   end
 
+<<<<<<< HEAD
   def current_player
+=======
+  def current_player(turn_count)
+>>>>>>> b890aa97816b391b0a21c24a26ccd31fbd3284e3
     turn_count % 2 == 0 ? "X" : "O"
   end
 
@@ -69,6 +83,7 @@ class TicTacToe
     puts "-----------"
     puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
   end
+<<<<<<< HEAD
 
   def turn
     puts "Please enter 1-9:"
@@ -143,4 +158,6 @@ class TicTacToe
       end
     end
 
+=======
+>>>>>>> b890aa97816b391b0a21c24a26ccd31fbd3284e3
 end

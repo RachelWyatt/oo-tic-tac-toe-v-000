@@ -2,7 +2,16 @@
 require 'pry'
 require_relative '../lib/tic_tac_toe.rb'
 
+<<<<<<< HEAD
 @board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 game = TicTacToe.new
 game.play
+=======
+
+
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
+puts "Welcome to Tic Tac Toe!"
+play(board)
+>>>>>>> b890aa97816b391b0a21c24a26ccd31fbd3284e3
